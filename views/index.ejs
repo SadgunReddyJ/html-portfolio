@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Add Task</h2>
+    
+  <form action="/submit" method="POST">
+    <input type="text" name="newItem" required>
+    <ul>
+        <% for(var i=0; i<locals.genList.length;i++){%>
+         
+   <%=locals.genList[i] %>
+         
+    <% } %>
+    </ul>
+    <button type="submit">+</button>
+</form>
+</body>
+</html>
